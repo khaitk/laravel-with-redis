@@ -1,0 +1,23 @@
+{
+    "name": "package/laravel",
+    "version": "dev-main",
+    "description": "Project Laravel Redis",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\LaravelServicesProvider"
+            ]
+        }
+    }
+}
