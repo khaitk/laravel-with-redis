@@ -11,10 +11,10 @@ use Laravel\Providers\RouteServiceProvider;
 class LaravelServicesProvider extends ServiceProvider{
     function register(): void
     {
-
     }
 
     function boot ( Kernel $kernel , Router $router ) {
+        $this->loadMigrationsFrom ( __DIR__ . '/../database/migrations' );
         App ::register ( RouteServiceProvider::class );
     }
 }
